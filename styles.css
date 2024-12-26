@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+nav{
+    width:100%;
+    height:10vh;
+    background-color: #9fc5f8;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 3rem;
+    color:white;
+    ul{
+        display:flex;
+        flex-direction: row;
+        list-style-type: none ;
+        margin-right: 15%;
+        li{
+            margin:1rem;
+            font-size: 1.5rem;
+            cursor:pointer;
+        }
+    }
+    h1{
+        font-size: 3.5rem;
+        margin-left: 10%;
+    }
+}
+.comtainer{
+    display:flex;
+    flex-direction: column;
+}
+header{
+    width:75%;
+    margin:1rem auto;
+    height:10vh;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-size: 2.5rem;
+    }
+    p,select{
+        font-size: 1.5rem;
+    }
+}
+main{
+    width:75%;
+    margin:2rem auto;
+    display: flex;
+    min-height: 20vh;
+    .weatherPanel{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width:25%;
+        min-height:50vh;
+        border-radius:2%;
+        margin: 0 1%;
+        background-color: #eeeeee;
+        img{
+            border-radius: 50%;
+            width:60%;
+        }
+        p{
+            font-size: 1.5rem;
+            margin-top: -1rem;
+        }
+        span{
+            font-size: 2rem;
+            margin:3rem;
+            font-weight: 600;
+        }
+        #red{
+            color:red;
+        }
+        #blue{
+            color:blue;
+        }
+    }
+    .weatherPanel:first-of-type{
+        margin-left:0;
+    }
+    .weatherPanel:nth-of-type(4){
+        margin-right:0;
+    }
+}
+footer{
+    position: fixed;
+    left:15rem;
+    top: 80vh;
+    width:75%;
+    min-height:20vh;
+    border:1px solid black;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    img{
+        width:10%;
+    }
+    button{
+        width: 15%;
+        height: 5vh;
+        background-color: #9fc5f8;
+        box-shadow: 4px 4px black;
+        border:3px solid black;
+        color:black;
+        font-size: 1.5rem;
+        cursor:pointer;
+        margin-right: 1rem;
+    }
+    .textArea{
+        width:65%;
+    }
+    .textArea h1{
+        margin-top: -1rem;
+    }
+    .textArea p{
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+    }
+
+}

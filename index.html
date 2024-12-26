@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <footer>
+        <img src="./assets/cookie.png" alt="">
+        <div class="textArea"><h1>Stop! Cookie Time!</h1>
+        <p>We use Cookies (unedible) to track you and steal your information and sell it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus beatae aspernatur veritatis praesentium eligendi odio minus iure obcaecati sunt earum vero quas rem, debitis, magni numquam, expedita ex soluta? <a href="#">Read More</a></p></div>
+            <button onclick="document.querySelector('footer').remove()">I Accept</button>
+    </footer>
+    <nav>
+        <h1>
+            DojoWeather
+        </h1>
+        <ul>
+            <li class="cities" id="burbank">Burbank</li>
+            <li class="cities" id="chicago">Chicago</li>
+            <li class="cities" id="dallas">Dallas</li>
+        </ul>
+    </nav>
+<div class="container">
+    <header>
+        <div><h1 id="currCityDisplay">San Jose</h1> <p><span id="currentTemp"></span><span id="currWeatherCond"></span></p></div>
+        <p>Show Temperature in: <select name="temp" id="temp">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+        </select></p>
+    </header>
+    <main>
+        <div class="weatherPanel">
+            <h1>Today</h1>
+            <img src="./assets/some_rain.png" alt="">
+            <p>some rain </p>
+            <div class="temps">
+                <span class="temperature" id="red">24</span>
+                <span class="temperature" id="blue">18</span>
+            </div>
+        </div>
+        <div class="weatherPanel"> <h1>Tomorrow</h1>
+            <img src="./assets/some_sun.png" alt="">
+            <p>some sun</p>
+            <div class="temps">
+                <span class="temperature" id="red">27</span>
+                <span class="temperature" id="blue">19</span>
+            </div></div>
+        <div class="weatherPanel"> <h1>Friday</h1>
+            <img src="./assets/some_clouds.png" alt="">
+            <p>some clouds</p>
+            <div class="temps">
+                <span class="temperature" id="red">21</span>
+                <span class="temperature" id="blue">16</span>
+            </div></div>
+        <div class="weatherPanel"> <h1>Saturday</h1>
+            <img src="./assets/some_sun.png" alt="">
+            <p>some sun</p>
+            <div class="temps">
+                <span class="temperature" id="red">26</span>
+                <span class="temperature" id="blue">21</span>
+            </div></div>
+    </main>
+  
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
